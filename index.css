@@ -1,0 +1,53 @@
+:root {
+  /* this has to be set to switch between light or dark */
+  color-scheme: light dark;
+
+  --light-bg: ghostwhite;
+  --light-color: #000;
+  --light-code: tomato;
+
+  --dark-bg: #212121;
+  --dark-color: ghostwhite;
+  --dark-code: gold;
+}
+* {
+  background-color: light-dark(var(--light-bg), var(--dark-bg));
+  color: light-dark(var(--light-color), var(--dark-color));
+}
+code {
+  color: light-dark(var(--light-code), var(--dark-code));
+}
+.light {
+  /* forces light color-scheme */
+  color-scheme: light;
+}
+.dark {
+  /* forces dark color-scheme */
+  color-scheme: dark;
+}
+section {
+  padding: 0.8rem;
+}
+header h2 {
+  font-family: 'calibri', sans-serif;
+  
+  font-size: 2.5rem;
+  color: #00ffcc;
+  text-shadow: 0 0 8px #00ffcc, 0 0 20px #007f66;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 30%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+p.ex1 {
+  margin-left: 250px;
+}
