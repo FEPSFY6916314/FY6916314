@@ -28,6 +28,9 @@ code {
 section {
   padding: 0.8rem;
 }
+header h1 {
+  font-family: arial, sans-serif;
+}
 header h2 {
   font-family: 'calibri', sans-serif;
   
@@ -51,3 +54,4 @@ tr:nth-child(even) {
 p.ex1 {
   margin-left: 250px;
 }
+
