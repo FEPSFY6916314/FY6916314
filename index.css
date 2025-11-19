@@ -1,3 +1,4 @@
+
 :root {
   /* this has to be set to switch between light or dark */
   color-scheme: light dark;
@@ -6,9 +7,11 @@
   --light-color: #000;
   --light-code: tomato;
 
-  --dark-bg: #212121;
+  --dark-bg: ##121212 ;
   --dark-color: ghostwhite;
   --dark-code: gold;
+
+
 }
 * {
   background-color: light-dark(var(--light-bg), var(--dark-bg));
@@ -25,33 +28,86 @@ code {
   /* forces dark color-scheme */
   color-scheme: dark;
 }
+
+body {
+  font-family: Garamond, serif;
+}
 section {
   padding: 0.8rem;
 }
-header h1 {
-  font-family: arial, sans-serif;
+h1, h2, h3, h4, h5 {
+  font-family: Garamond, sans-serif;
+  font-weight: bold;
 }
-header h2 {
-  font-family: 'calibri', sans-serif;
-  
-  font-size: 2.5rem;
-  color: #00ffcc;
-  text-shadow: 0 0 8px #00ffcc, 0 0 20px #007f66;
-}
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 30%;
-}
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;  padding: 8px;
-}
-tr:nth-child(even) {
-  background-color: #dddddd;
+h5{
+  font-size: 14pt;
+  color: #ffffff;
+  margin-top: 0.5rem;
+  font-size: 16pt;
+  margin-bottom: 0.05rem;
 }
 
+.underline {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+  text-underline-position: under;
+  text-underline-offset: 8px;
+}
+h6.underline {
+  font-family: Garamond, sans-serif;
+  font-weight: bold;
+  
+  color: #3191ff;
+}
+
+h6.dark {
+  color: #3aa9c5;
+}
+h3 {
+  margin-top: 0.5rem;
+  font-size: 16pt;
+  margin-bottom: 0.05rem;
+}
+table.dark {
+  font-family: garamond, sans-serif;
+  width: 40%;
+  color: #fff;
+}
+table.light {
+  font-family: garamond, sans-serif;
+  width: 40%;
+  color: #000;
+}
+
+td, th {
+  border: 1px solid #444444;
+  text-align: left;  padding: 8px;
+  
+}
+td.light, th.light {
+  border: 1px solid #000;
+  text-align: left;  padding: 8px;
+  
+}
+td.dark, th.dark {
+  border: 1px solid #444444;
+  text-align: left;  padding: 8px;
+  
+}
+tr.light:nth-child(odd) {
+  background-color: #EEEEEE;
+}
+tr.light:nth-child(even) {
+  background-color: #aaaaaa;
+}
+tr.dark:nth-child(odd) {
+  background-color: #424242;
+}
+tr.dark:nth-child(even) {
+  background-color: #101101;
+}
 p.ex1 {
   margin-left: 250px;
 }
-
