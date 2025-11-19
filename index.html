@@ -5,11 +5,14 @@
   <head>
     <link rel="stylesheet" href="index.css">  
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+    <script src="index.js"></script>
+    
     <img src="WebBanner2023.png" alt="Banner" width="100%" height="auto">
     <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
     <h2>Student URN: 6916314</h2>
   </head>
+<body>
   <hr>
   <h2><b>Conference paper: Bridge Deck Repairs</b></h2>
   </hr>
@@ -18,7 +21,7 @@
 
 <tr>
 
-<th><h3>Table of contents</h3></th>
+<th>Table of contents</th>
 </tr>
 
 <tr>
@@ -37,6 +40,7 @@
 
 <tr>
 <td><a href="#References">References</td>
+
 </tr>
 
 </table>
@@ -44,7 +48,7 @@
 <p class="ex1">
 <pre>
 <div style="white-space: pre-wrap;">
-Space travel is difficult the aerospace sector uses majority of budget on the propellants. In this paper We will look into the engineering techniques and scientific concept gone into the revolutionising space travel and compared them to current methods
+Rotating detonation engines (RDEs) is a type of rocket engine which rely on detonative combustion rather than conventional deflagrative combustion. It doesn’t follow the design parameter you assign to rocket engines. However, because of it design and increase efficiency RDEs present a cleaner and cheaper from of space transportation. This work is designed to be an overview of RDEs with some look into induvial research.
 </div>
 </pre>
 </p>
@@ -52,29 +56,57 @@ Space travel is difficult the aerospace sector uses majority of budget on the pr
 <p class="ex1">
 <pre id="Introduction_InText">
 <div style="white-space: pre-wrap;">
-Rotating detonation engines (RDEs) as a concept promises greater fuel efficiency and trust output than conventional rocket engines. This is important as most of aerospace sector relies on inefficient engines which can not harness the full potential energy output of the propellant, and as the industry continues expand due military (Oyewole and Olumba, 2024) , business (Gerbis, 2023) and tinkers 
+RDEs as a concept promise greater fuel efficiency and thrust output than conventional rocket engines. This is important, as most of the aerospace sector relies on inefficient engines, which cannot harness the full potential energy output of the propellants, and the industry continues expand due to military (Oyewole and Olumba, 2024), business (Gerbis, 2023) and tinkers. They have recently taken on more commercial interest as Venus Aerospace, is a pioneer as the first company to launch a rocket powered by an RDE on 14th May 2025 09:37 EDT (Dinner,2025). 
 </div>
 </pre>
 </p>
 
 <h3 id="Analysis and discussion">Analysis and discussion</h3>
 <h4> Operation Principles of RDEs</h4>
-<pre id="Analysis_InText">
+<pre id="Analysis_InText1">
 <div style="white-space: pre-wrap;">
-RDE operate on detonation combustion over the conventional deflagration combustion. The difference is are detonation reaction the reaction happen supersonically causing shock waves so the product travel in the same direction as the reaction while deflagration the rate of burning is subsonic and principle is like a candle the product travel in the opposite direction to the burn and occur layer by layer. (Venugopalan, 2015)
-So in case of RDE these shockwave produced by combustion rotate in annular (ring shape) chamber with it blasting out the make but constantly being feed propellants to maintain the shock wave. 
+RDEs operate on detonation combustion over the conventional deflagration combustion. The difference is that for detonation reactions, the reaction happens at supersonic speeds, causing shock waves, so the product travels in the same direction as the reaction, whereas in deflagration, the rate of burning is subsonic and the principle is like a candle; the product travels in the opposite direction to the burn and occurs layer by layer. (Venugopalan, 2015). So, in the case of RDEs, these shockwaves, produced by combustion, rotate in an annular (ring shape) chamber with it blasting out the nozzle, and is constantly being fed propellants to maintain the shock wave. 
+</div>
+<h4> Previous experiments on RDEs</h4>
+<div style="white-space: pre-wrap;">
+An RDE was developed and used in an effort test feasibility of a small scale RDE. They used a single RDE with an outer diameter of 68mm, height of 50mm and a 4.5mm propellant injection channel width. This gives it about the dimensions of a paper cup. The design was also modular, as this would allow for lengthening of the chamber, or adding things like an aerospike (Dodd, 2020). In terms of results, the team did not look at thrust or I<sub>sp</sub>, but from the measurements of mass flow rate, and wavespeed, both can be calculated using the equations: (Specific impulse, 2021) and (Ishii et al., 2023)
+
+In this paper, the maximum mass flow rate is “45g/s” so in standard SI unit that is 0.045kg/s  and the speed of the wave is 18000m/s. Also take the gross calorific value for hydrogen to be 141.7 x 106 J/kg (Editor Engineeringtoolbox, 2025) This then allows us to calculate a thrust value of approximately 134N and an Isp of 304. These results show the practicality of small RDEs against a relative example - a model rocket motor using an APCP motor has an Isp of 207.55s (Hasan, 2025) and produces significantly less thrust for its size. Higher Isp in turn means higher efficiency, so RDEs would be able to provide more thrust relative to weight class. 
+</div>
+
+</pre>
+<!-- Equations --the latex between the $$ will be rendered by mathjax --so doesn't work with word counter-->
+
+$$q=the\;gross\;calorific\;value\;for\;propellant$$
+$$g=acceleration\;\;constant\;\;due\;\;to\;\;earth\;\;gravity$$
+$$\eta=fraction\;\;of\;\;energy\;\;converted\;\;to\;\;KE$$
+$$I_{sp}=the\;\;efficiency$$
+$$\dot{m}= mass\;\;flow\;\;rate $$
+$$\eta=\frac{\frac{1}{2}\dot{m} \times v^2}{q \times \dot{m}}$$
+$$F=\sqrt{2\times q \times \eta}$$
+$$I_{sp}=\frac{F}{\dot{m} \times g}$$
+<pre id="Analysis_InText2">
+<div style="white-space: pre-wrap;">
+An RDE was designed and built using the “design guidelines of Bykovskii et al” (Bennewitz et al., 2023). Then tested by: Purdue University (Purdue), University of Central Florida (UCF), University of Washington (UW) and Air Force Research Laboratory (AFRL). In these tests they investigated thrust and Isp relation to mass flow rate and they investigated wave speed, number of waves and pressure of chamber and propellants. 
+
+The dimensions of the engine are 114mm diameter to 108mm height roughly equal to 4410 cm3 or about two large half gallon bottles. In the test, the CTAP is a pressure sensor, and this was used to find internal pressure. In addition, cameras were used to find wavespeed, number of waves while load-cells were used in finding thrust. The difference was in how they angled and focused on their camera. The test also showed this design can operate well using cryogenic propellant and the chamber can handle the pressure as there no pressure spike suggesting a crack. In terms of data gather the efficiency relatively high for at class at 150s compared to much larger Rocket engine which are generally more efficient it shows the efficiency of RDE 
 </div>
 </pre>
-
-
+<pre id="Analysis_InText3">
+<div style="white-space: pre-wrap;">
+RDEs operate on detonation combustion over the conventional deflagration combustion. The difference is that for detonation reactions, the reaction happens at supersonic speeds, causing shock waves, so the product travels in the same direction as the reaction, whereas in deflagration, the rate of burning is subsonic and the principle is like a candle; the product travels in the opposite direction to the burn and occurs layer by layer. (Venugopalan, 2015). So, in the case of RDEs, these shockwaves, produced by combustion, rotate in an annular (ring shape) chamber with it blasting out the nozzle, and is constantly being fed propellants to maintain the shock wave. 
+</div>
+</pre>
 <table>
 <tr>
-  <th>Advantage</th>
-  <th>Disadvantages</th>
+  <th>Engine</th>
+  <th>Rocket used in</th>
+  <th>Isp (s)</th>
 </tr>
 <tr>
-  <td>Engines can be smaller: not only because of efficiency but the general design of a RDE doesn't require a de laval nozzle</td>
-  <td>More complex to build RDE use part like tesla valves which can only be 3D printed</td>
+  <td>RS-68</td>
+  <td>Delta IV heavy</td>
+  <td>362 (<i>Delta IV</i>, no date)</td>
 </tr>
 <tr>
   <td>3.3 m</td>
@@ -93,7 +125,6 @@ So in case of RDE these shockwave produced by combustion rotate in annular (ring
   <td>9</td>
 </tr>
 </table>
-<p>Formatting some equations using Latex to mathjax: \( x^2 + 4x + 4 = 0\)</p>
 <h3 id="References">References</h3>
 <p>
 <div style="white-space: pre-wrap;">
@@ -187,13 +218,16 @@ So in case of RDE these shockwave produced by combustion rotate in annular (ring
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const AnalysisCount1 = displayWordCount("Analysis_InText1");
+    const AnalysisCount2 = displayWordCount("Analysis_InText2");
+    const AnalysisCount3 = displayWordCount("Analysis_InText3");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount1 + AnalysisCount2 + AnalysisCount3;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
 </script>
+</body>
 </html>
